@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+
+  link_history:
+    build: .
+    command: uvicorn main:app --host 0.0.0.0 --port 8080
+    volumes:
+      - .:/app
+    ports:
+      - 8080:8080
+    depends_on:
+      - redis
