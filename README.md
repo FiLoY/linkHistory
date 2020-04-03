@@ -3,7 +3,8 @@ Web-приложение для простого учета посещенных
 
 ## Technical specifications
  - python 3.7.7;
- - fastAPI 0.53.2.
+ - fastAPI 0.53.2;
+ - redis 5;
 
 ## Getting started
  - `git clone https://github.com/FiLoY/linkHistory.git` 
